@@ -242,7 +242,29 @@
 .join-button {
     margin-left: -5px;
 }
-
+/* footer style */
+.footer{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 3.12rem 10rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo-description{
+    margin-top: 1rem;
+}
+.home-column li, .feature-column li{
+    list-style: none;
+    margin-bottom: 1.62rem;
+    color: #6B7280;
+}
+.icon-column img{
+    margin-left: 1.5rem;
+}
+.twitter{
+    width: 40px;
+}
 
 
 
@@ -289,5 +311,10 @@
    #email{
     width: 12.63rem;
    }
-    
+   .footer-container{
+    flex-direction: column;
+   }
+   .footer{
+    padding: 3.12rem 1.25rem;
+   }
 }
