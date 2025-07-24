@@ -34,17 +34,17 @@ main > section{
 .btn-primary{
     color: #FFFFFF;
     background-color: #E95A08;
-    padding: 1rem 5.56rem;
+    padding: 1rem 5.3rem;
     font-weight: 600;
     border: none;
+    text-align: center;
     
 }
 
 /* header style start */
-.header, .hero-banner, .our-plants{
+.header, .hero-banner, .our-plants, .flower-and-plants{
     max-width: 1140px;
     margin: 0 auto;
-    
 }
 
 
@@ -53,7 +53,6 @@ main > section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid; */
 }
 .link, .link-span{
     display: flex;
@@ -105,8 +104,12 @@ main > section{
     grid-template-columns: repeat(4, 1fr);
     margin-top: 3rem;
     gap: 1.9rem;
-    
+    width: 100%;
 }
+.card-img{
+    width: 100%;
+}
+
 .img-title{
     font-size: 1.4rem;
     font-weight: 400;
@@ -118,6 +121,40 @@ main > section{
     color: #111111;
     margin-top: -10px;
 }
+/* flower and plant section */
+.flower-and-plants{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.flower{
+    width: 33.8rem;
+    height: 37.4rem;
+}
+.plant-title{
+    font-weight: 700;
+    font-size: 3.12rem;
+}
+.list-item{
+    margin-bottom: 1rem;
+}
+.img-div-1{
+    position:relative;
+}
+.img-div-2{
+    position:absolute;
+    z-index: 100;
+    width: 100%;
+}
+.img-div-2 img{
+    width: 286px;
+    margin-top: -110px;
+    margin-left: 390px;
+    /* box-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.25); */
+}
+
 
 
 /* Responsibe Media Quary */
@@ -134,7 +171,19 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
-   .card-img{
+   .card{
+        /* width: 100%; */
+   }
+   .card-display{
+    display: none;
+   }
+   .trusted{
+    display: none;
+   }
+   .flower-and-plants{
+    flex-direction: column;
+   }
+   .img-div-1 img{
     width: 100%;
    }
     
