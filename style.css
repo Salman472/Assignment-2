@@ -32,11 +32,16 @@ main > section{
     text-align: center;
 }
 .btn-primary{
-
+    color: #FFFFFF;
+    background-color: #E95A08;
+    padding: 1rem 5.56rem;
+    font-weight: 600;
+    border: none;
+    
 }
 
 /* header style start */
-.header, .hero-banner{
+.header, .hero-banner, .our-plants{
     max-width: 1140px;
     margin: 0 auto;
     
@@ -86,7 +91,33 @@ main > section{
     font-weight: 500;
     margin-bottom: -0.1rem;
 } */
+/* our plant section style */
+.plants-title{
+    font-size: 3.13rem;
+    font-weight: 700;
 
+}
+.plants-description{
+    margin-top: -25px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    gap: 1.9rem;
+    
+}
+.img-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #111111;
+}
+.img-price{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111111;
+    margin-top: -10px;
+}
 
 
 /* Responsibe Media Quary */
@@ -99,6 +130,12 @@ main > section{
         flex-direction: column-reverse;
         margin-top: 28px;
     }
-    
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+   .card-img{
+    width: 100%;
+   }
     
 }
