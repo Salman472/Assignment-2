@@ -4,7 +4,6 @@
 .inter-font {
   font-family: "Inter", sans-serif;
 }
-
 /* shared style */
 *{
     margin: 0;
@@ -25,9 +24,6 @@
     font-weight: 500;
     margin-bottom: -0.1rem;
 }
-/* main > section{
-    margin-top: 120px;
-} */
 .secondary-color{
     color: #E95A08;
 }
@@ -40,17 +36,13 @@
     padding: 1rem 5.3rem;
     font-weight: 600;
     border: none;
-    text-align: center;
-    
+    text-align: center; 
 }
-
 /* header style start */
 .header, .hero-banner, .our-plants, .flower-and-plants, .deal{
     max-width: 1140px;
     margin: 0 auto;
 }
-
-
 /* navbar style */
 .navber{
     display: flex;
@@ -58,8 +50,7 @@
     align-items: center;
 }
 .link, .link-span{
-    display: flex;
-    
+    display: flex;  
 }
 .nav-link{
     list-style: none;
@@ -82,17 +73,11 @@
     margin-top: 130px;
    
 }
-
 .banner-title{
     font-size: 4.1rem;
     font-weight: 700;
     margin-bottom: -1rem;
 }
-/* .banner-discription{
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: -0.1rem;
-} */
 /* our plant section style */
 .our-plants{
     margin-top: 120px;
@@ -102,9 +87,6 @@
     font-weight: 700;
 
 }
-/* .plants-description{
-    margin-top: -25px;
-} */
 .card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -116,7 +98,6 @@
 .card-img{
     width: 100%;
 }
-
 .img-title{
     font-size: 1.4rem;
     font-weight: 400;
@@ -155,67 +136,80 @@
 .img-div-2{
     position:absolute;
     z-index: 100;
-    /* width: 100%; */
 }
 .img-div-2 img{
     width: 200px;
-    /* position: relative;
-    top: -50;
-    right: -100; */
     margin-top: -100px;
     margin-left: 400px;
-    /* box-shadow: -4px 10px 4px 0 rgba(0, 0, 0, 0.25); */
 }
 /* deal section style  */
-/* .deal{
+.deal{
     margin-top: 120px;
 }
-.deal-title{
-    font-size: 3.12rem;
-    font-weight: 700;
-    margin-bottom: -10px;
-}
-.deal-description{
-    margin-bottom: 120px;
-}
-.deal-img-container{
+.deal-section{
+    height: 50vh;
+    /* margin: 0 auto; */
     display: flex;
-    gap: 2rem;
+    gap: 10px;
 }
-#deal-img{
-    margin-top: 20px;
+.div{
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
 }
-.deal-img-1 img{
+.div-1{
+    height: 50%;
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.4)), url(assets/deal-bloom.png) no-repeat center  ;
+    background-size: cover;
     border-radius: 14px;
 }
-.deal-img-2 img{
-    border-radius:22px ;
+.div-2{
+    height: 50%;
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.4)), url(assets/deal-ana.png) no-repeat center ;
+    background-size: cover;
+    border-radius: 14px;
 }
-.deal-img-2{
-    position: relative;
-    border: 3px solid;
-    
-    
-}
-.text-2{
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: translate(30% 20%);
-    border: 3px solid;
-    
-    
-}
-.color-effect{
-    color: rgba(0, 0, 0, 0.4);
-}
-.zobo-plant{
+.title-div{
+    text-align: center;
+    margin-top: 9vh;
+    font-size: 1.25rem;
     font-weight: 700;
-    font-size: 2.5rem;
     color: #FFFFFF;
-} */
-
-
+}
+.description-div{
+    text-align: center;
+    color: #FFFFFF;
+}
+.shop{
+    border-bottom: 2px solid #FFFFFF;
+}
+.div-3{
+    height: 50vh;
+    width: 60%;
+    background:linear-gradient(rgba(0, 0, 0, 0.4)),  url(assets/deal-zabo.png) no-repeat center ;
+    background-size: cover;
+    border-radius: 22px; 
+}
+.title-div-3{
+    text-align: center;
+    margin-top: 20vh;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFFFFF
+}
+.description-div-3{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #FFFFFF;  
+}
+.shop-now{
+    border-bottom: 2px solid #FFFFFF;
+}
 /* join section */
 .join-bunch{
     margin-top: 120px;
@@ -225,8 +219,7 @@
     padding: 12.5rem 18.75rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
-    
+    background-position: center;  
 }
 .join-title{
     font-weight: 700;
@@ -265,14 +258,11 @@
 .twitter{
     width: 40px;
 }
-
-
-
 /* Responsibe Media Quary */
 /* mobile device */
 @media screen and (max-width:576px) {
     .btn-primary{
-        padding: 1rem 2rem;
+        padding: 1rem 5rem;
     }
     .link-span{
         display: none;
@@ -317,4 +307,34 @@
    .footer{
     padding: 3.12rem 1.25rem;
    }
+    .deal-section{
+        flex-direction: column;
+        padding: 16px;
+        height: 100vh;
+    }
+    .div{
+        width: 100%;
+        height: 100%;
+    }
+    .div-1{
+        height: 100%;
+    }
+    .div-2{
+        height: 100%;
+    }
+    .title-div{
+        font-size: 2.5rem;
+    }
+    .description-div{
+        font-size: 1.75rem;
+    }
+    .border-redius{
+        border-radius: 0px;
+    }
+    .div-3{
+        width: 100%;
+    }
+    .title-div-3{
+        margin-top: 10vh;
+    }
 }
